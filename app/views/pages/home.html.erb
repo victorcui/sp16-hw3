@@ -1,0 +1,43 @@
+
+<table>
+	<h3> Users: </h3>
+	<tr>
+		<td> Username </td>
+		<td> Email </td>
+		<td> Age </td>
+	</tr>
+	<% @users.each do |user|%>
+		<tr>
+			<td><%= user.username   %></td>
+			<td><%= user.email   %></td>
+			<td><%= user.age   %></td>
+		</tr>
+	<%end%>
+</table>
+
+
+<table>
+	<h3> Todos: </h3>
+	<tr>
+		<td> Task </td>
+	</tr>
+	<% @todos.each do |todo|%>
+		<tr>
+			<td><%= todo.description%></td>
+		</tr>
+	<%end%>
+
+</table>
+
+
+<table>
+	<h3> Cats: </h3>
+	<tr>
+		<td> Name </td>
+	</tr>
+	<% @cats.each do |cat|%>
+		<tr>
+			<td><%= cat.name%></td>
+		</tr>
+	<%end%>
+</table>
